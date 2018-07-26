@@ -5,7 +5,7 @@ About file size after adding metadata to PDF. Compare file sizes with pdftk and 
 ## Test sample Source
 
 *   Calendar_2018.xlsx (Created Excel 2013)
-*   Calendar_2018.pdf  (Export pdf quality = xlQualityStandard)
+*   Calendar_2018.pdf  (Export from Excel, pdf quality = xlQualityStandard)
 
 ## Test environment
 
@@ -48,7 +48,7 @@ With  compress option
 ```
 >pdftk Calendar_2018.pdf update_info_utf8 pdftk.txt output output_pdftk.pdf compress
 ```
-Note: The compression option is not good. That file size increased slightly.
+Note: This compression option is not good. That file size increased slightly.
 
 
 # adding PDF metadata using Ghostscript
@@ -65,7 +65,13 @@ command
 ```
 rungs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/default -dFastWebView=true -sOutputFile=output_pdfmark.pdf Calendar_2018.pdf pdfmark.txt
 ```
-Note: "rungs" is Ghostscript command name of TeX Live 2018. Usually "gswin32c" or "gswin64c" are applicable.
+
+Note
+*   "rungs" is Ghostscript command name of TeX Live 2018. Usually "gswin32c" or "gswin64c" are applicable.
+*   If you want to embed Windows fonts, set the environment variable GS_FONTPATH in advance as follows:
+```
+set GS_FONTPATH=%windir%\fonts
+```
 
 
 # Results
