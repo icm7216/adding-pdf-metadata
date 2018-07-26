@@ -4,7 +4,7 @@ About file size after adding metadata to PDF. Compare file sizes with pdftk and 
 
 ## Test sample Source
 
-*   Calendar_2018.xlsx
+*   Calendar_2018.xlsx (Created Excel 2013)
 *   Calendar_2018.pdf  (Export pdf quality = xlQualityStandard)
 
 ## Test environment
