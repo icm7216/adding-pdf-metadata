@@ -1,0 +1,9 @@
+InfoBegin
+InfoKey: Title
+InfoValue: Hello pdftk
+InfoBegin
+InfoKey: Author
+InfoValue: PDF Author
+InfoBegin
+InfoKey: Subject
+InfoValue: Calendar_2018

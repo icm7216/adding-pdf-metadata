@@ -1,0 +1,4 @@
+[ /Title (Hello pdfmark with Ghostscript)
+  /Author (PDF Author)
+  /Subject (Calendar_2018)
+  /DOCINFO pdfmark
